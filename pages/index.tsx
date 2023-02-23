@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import Layout from '../components/Layout'
 import { Loading } from '../components/Loading'
+import { Stories } from '../components/Stories'
 import { RequestState, Story } from '../interfaces'
 import { fetchStories } from '../utils/fetchStories'
 
@@ -29,7 +30,7 @@ const IndexPage = () => {
   }
 
   return <Layout title="Ranked News">
-    {status}
+    <Stories stories={state.data} />
   </Layout>
 }
 

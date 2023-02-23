@@ -5,6 +5,11 @@ type Props = {
   stories: Story[]
 }
 
-export const Stories: FC<Props> = ({ }) => {
-  return <></>
+export const Stories: FC<Props> = ({ stories }) => {
+  return <ul>
+    {
+      stories
+        .map(story => (<li key={story.id}>{story.title}</li>))
+    }
+  </ul>
 }

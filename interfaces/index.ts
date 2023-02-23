@@ -4,5 +4,6 @@ export type RequestState<T> =
   | { status: 'failed', message: string }
 
 export type Story = {
-
+  id: number
+  title: string
 }
