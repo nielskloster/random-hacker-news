@@ -6,4 +6,5 @@ export type RequestState<T> =
 export type Story = {
   id: number
   title: string
+  author: string
 }
