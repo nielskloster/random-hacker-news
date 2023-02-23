@@ -7,4 +7,5 @@ export type Story = {
   id: number
   title: string
   author: string
+  authorKarma: number
 }

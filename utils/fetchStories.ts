@@ -13,6 +13,7 @@ type StoryInfo = {
 
 type AuthorInfo = {
   id: string
+  karma: number
 }
 
 async function fetchStoryIds(): Promise<number[]> {
@@ -46,7 +47,12 @@ async function fetchStory(id: number): Promise<Story> {
   const storyInfo = await fetchStoryInfo(id)
   const authorInfo = await fetchAuthorInfo(storyInfo.by)
 
-  return { id, title: storyInfo.title, author: authorInfo.id }
+  return {
+    id,
+    title: storyInfo.title,
+    author: authorInfo.id,
+    authorKarma: authorInfo.karma
+  }
 }
 
 export async function fetchStories(): Promise<Story[]> {

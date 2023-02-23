@@ -9,7 +9,7 @@ export const Stories: FC<Props> = ({ stories }) => {
   return <ul>
     {
       stories
-        .map(story => (<li key={story.id}>{story.title} : {story.author}</li>))
+        .map(story => (<li key={story.id}>{story.title} : {story.author} : {story.authorKarma}</li>))
     }
   </ul>
 }
