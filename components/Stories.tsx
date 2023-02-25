@@ -1,5 +1,6 @@
 import { FC } from "react"
 import { Story } from "../interfaces"
+import { getRelativeTime } from "../utils/getRelativeTime"
 import { paths } from "../utils/paths"
 
 type Props = {
@@ -19,7 +20,7 @@ export const Stories: FC<Props> = ({ stories }) => (
             <h1 className="text-purple-600 truncate">{story.title}</h1>
             <div className="text-sm">
               <div>Score: {story.score}</div>
-              <div>Time: {new Date(story.time * 1000).toLocaleString()}</div>
+              <div className="capitalize">Posted: {getRelativeTime(story.time * 1000)}</div>
               <div>By: {story.by}({story.karma})</div>
             </div>
           </button>
