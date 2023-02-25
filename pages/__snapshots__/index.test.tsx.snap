@@ -1,162 +1,129 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`Index page > App mounts properly 1`] = `
-{
-  "asFragment": [Function],
-  "baseElement": <body>
-    <div>
-      <div>
-        <header>
-          <h1
-            class="flex justify-center p-4 font-mono"
-          >
-            Random Hacker News
-          </h1>
-        </header>
-        <div
-          class="flex justify-center p-4 font-mono"
-        >
-          <div
-            aria-label="loading"
-            class="grid grid-cols-1 md:grid-cols-2 gap-4 p-y-12"
-          >
-            <div
-              class="bg-slate-100 rounded-lg p-4 h-32 w-80"
-            />
-            <div
-              class="bg-slate-100 rounded-lg p-4 h-32 w-80"
-            />
-            <div
-              class="bg-slate-100 rounded-lg p-4 h-32 w-80"
-            />
-            <div
-              class="bg-slate-100 rounded-lg p-4 h-32 w-80"
-            />
-            <div
-              class="bg-slate-100 rounded-lg p-4 h-32 w-80"
-            />
-            <div
-              class="bg-slate-100 rounded-lg p-4 h-32 w-80"
-            />
-            <div
-              class="bg-slate-100 rounded-lg p-4 h-32 w-80"
-            />
-            <div
-              class="bg-slate-100 rounded-lg p-4 h-32 w-80"
-            />
-            <div
-              class="bg-slate-100 rounded-lg p-4 h-32 w-80"
-            />
-            <div
-              class="bg-slate-100 rounded-lg p-4 h-32 w-80"
-            />
-          </div>
-        </div>
-        <footer />
-      </div>
-    </div>
-  </body>,
-  "container": <div>
-    <div>
-      <header>
-        <h1
-          class="flex justify-center p-4 font-mono"
-        >
-          Random Hacker News
-        </h1>
-      </header>
-      <div
+exports[`Index page > Renders failed request 1`] = `
+<div>
+  <div>
+    <header>
+      <h1
         class="flex justify-center p-4 font-mono"
       >
-        <div
-          aria-label="loading"
-          class="grid grid-cols-1 md:grid-cols-2 gap-4 p-y-12"
-        >
-          <div
-            class="bg-slate-100 rounded-lg p-4 h-32 w-80"
-          />
-          <div
-            class="bg-slate-100 rounded-lg p-4 h-32 w-80"
-          />
-          <div
-            class="bg-slate-100 rounded-lg p-4 h-32 w-80"
-          />
-          <div
-            class="bg-slate-100 rounded-lg p-4 h-32 w-80"
-          />
-          <div
-            class="bg-slate-100 rounded-lg p-4 h-32 w-80"
-          />
-          <div
-            class="bg-slate-100 rounded-lg p-4 h-32 w-80"
-          />
-          <div
-            class="bg-slate-100 rounded-lg p-4 h-32 w-80"
-          />
-          <div
-            class="bg-slate-100 rounded-lg p-4 h-32 w-80"
-          />
-          <div
-            class="bg-slate-100 rounded-lg p-4 h-32 w-80"
-          />
-          <div
-            class="bg-slate-100 rounded-lg p-4 h-32 w-80"
-          />
-        </div>
+        Random Hacker News
+      </h1>
+    </header>
+    <div
+      class="flex justify-center p-4 font-mono"
+    >
+      <div
+        class="text-red-400"
+      >
+        Oops. Something went wrong while getting the stories.
       </div>
-      <footer />
     </div>
-  </div>,
-  "debug": [Function],
-  "findAllByAltText": [Function],
-  "findAllByDisplayValue": [Function],
-  "findAllByLabelText": [Function],
-  "findAllByPlaceholderText": [Function],
-  "findAllByRole": [Function],
-  "findAllByTestId": [Function],
-  "findAllByText": [Function],
-  "findAllByTitle": [Function],
-  "findByAltText": [Function],
-  "findByDisplayValue": [Function],
-  "findByLabelText": [Function],
-  "findByPlaceholderText": [Function],
-  "findByRole": [Function],
-  "findByTestId": [Function],
-  "findByText": [Function],
-  "findByTitle": [Function],
-  "getAllByAltText": [Function],
-  "getAllByDisplayValue": [Function],
-  "getAllByLabelText": [Function],
-  "getAllByPlaceholderText": [Function],
-  "getAllByRole": [Function],
-  "getAllByTestId": [Function],
-  "getAllByText": [Function],
-  "getAllByTitle": [Function],
-  "getByAltText": [Function],
-  "getByDisplayValue": [Function],
-  "getByLabelText": [Function],
-  "getByPlaceholderText": [Function],
-  "getByRole": [Function],
-  "getByTestId": [Function],
-  "getByText": [Function],
-  "getByTitle": [Function],
-  "queryAllByAltText": [Function],
-  "queryAllByDisplayValue": [Function],
-  "queryAllByLabelText": [Function],
-  "queryAllByPlaceholderText": [Function],
-  "queryAllByRole": [Function],
-  "queryAllByTestId": [Function],
-  "queryAllByText": [Function],
-  "queryAllByTitle": [Function],
-  "queryByAltText": [Function],
-  "queryByDisplayValue": [Function],
-  "queryByLabelText": [Function],
-  "queryByPlaceholderText": [Function],
-  "queryByRole": [Function],
-  "queryByTestId": [Function],
-  "queryByText": [Function],
-  "queryByTitle": [Function],
-  "rerender": [Function],
-  "unmount": [Function],
-}
+    <footer />
+  </div>
+</div>
+`;
+
+exports[`Index page > Renders loaded stories 1`] = `
+<div>
+  <div>
+    <header>
+      <h1
+        class="flex justify-center p-4 font-mono"
+      >
+        Random Hacker News
+      </h1>
+    </header>
+    <div
+      class="flex justify-center p-4 font-mono"
+    >
+      <div
+        class="grid grid-cols-1 md:grid-cols-2 gap-4 p-y-12"
+      >
+        <button
+          class="bg-slate-100 rounded-lg p-4 w-full text-left text-slate-600 flex flex-col space-y-2"
+        >
+          <h1
+            class="text-purple-600 truncate"
+          >
+            Tell HN: Do not store any funds in PayPal or use them for anything critical
+          </h1>
+          <div
+            class="text-sm"
+          >
+            <div>
+              Score: 
+              682
+            </div>
+            <div>
+              Time: 
+              2/23/2023, 6:29:49 PM
+            </div>
+            <div>
+              By: 
+              ciguy
+              (
+              )
+            </div>
+          </div>
+        </button>
+      </div>
+    </div>
+    <footer />
+  </div>
+</div>
+`;
+
+exports[`Index page > Renders loading 1`] = `
+<div>
+  <div>
+    <header>
+      <h1
+        class="flex justify-center p-4 font-mono"
+      >
+        Random Hacker News
+      </h1>
+    </header>
+    <div
+      class="flex justify-center p-4 font-mono"
+    >
+      <div
+        aria-label="loading"
+        class="grid grid-cols-1 md:grid-cols-2 gap-4 p-y-12"
+      >
+        <div
+          class="bg-slate-100 rounded-lg p-4 h-32 w-80"
+        />
+        <div
+          class="bg-slate-100 rounded-lg p-4 h-32 w-80"
+        />
+        <div
+          class="bg-slate-100 rounded-lg p-4 h-32 w-80"
+        />
+        <div
+          class="bg-slate-100 rounded-lg p-4 h-32 w-80"
+        />
+        <div
+          class="bg-slate-100 rounded-lg p-4 h-32 w-80"
+        />
+        <div
+          class="bg-slate-100 rounded-lg p-4 h-32 w-80"
+        />
+        <div
+          class="bg-slate-100 rounded-lg p-4 h-32 w-80"
+        />
+        <div
+          class="bg-slate-100 rounded-lg p-4 h-32 w-80"
+        />
+        <div
+          class="bg-slate-100 rounded-lg p-4 h-32 w-80"
+        />
+        <div
+          class="bg-slate-100 rounded-lg p-4 h-32 w-80"
+        />
+      </div>
+    </div>
+    <footer />
+  </div>
+</div>
 `;
