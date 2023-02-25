@@ -15,7 +15,7 @@ const IndexPage = () => {
 
   if (status === 'failed') {
     return <Layout>
-      <div className='text-red-400'>Could not load stories!</div>
+      <div className='text-red-400'>Oops. Something went wrong while getting the stories.</div>
     </Layout >
   }
 

@@ -14,7 +14,7 @@ export const Stories: FC<Props> = ({ stories }) => {
           <button
             key={story.id}
             className="bg-slate-100 rounded-lg p-4 w-full text-left text-slate-600"
-            onClick={() => window.location.href = paths.Story(story.id)}
+            onClick={() => window.open(paths.Story(story.id), '_blank')}
           >
             <h1 className="text-purple-600">{story.title}</h1>
             <div>Score: {story.score}</div>
