@@ -9,6 +9,7 @@ export type StoryInfo = {
   title: string
   score: number
   by: string
+  time: number
 }
 
 export type AuthorInfo = {

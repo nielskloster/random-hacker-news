@@ -3,7 +3,7 @@ export const Loading = () => (
     {
       [...Array(10).keys()]
         .map(id => (
-          <div key={id} className="bg-slate-100 rounded p-4 h-32 w-96">
+          <div key={id} className="bg-slate-100 rounded p-4 h-32 w-80">
           </div>
         ))
     }

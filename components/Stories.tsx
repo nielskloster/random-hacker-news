@@ -14,6 +14,8 @@ export const Stories: FC<Props> = ({ stories }) => {
           <div key={story.id} className="bg-slate-100 rounded p-4 w-full">
             <h1 className="text-purple-600">{story.title}</h1>
             <div>Score: {story.score}</div>
+            <div>Time: {new Date(story.time * 1000).toLocaleString()}</div>
+            <div>By: {story.by}({story.karma})</div>
             <a className="text-sm underline" href={paths.Story(story.id)} target="_blank">Show more</a>
           </div>
         ))
