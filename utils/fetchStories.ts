@@ -47,5 +47,5 @@ export async function fetchStories(): Promise<Story[]> {
 
   const stories = await Promise.all(randomIds.map(id => fetchStory(id)))
 
-  return stories
+  return stories.sort((a, b) => b.score - a.score)
 }

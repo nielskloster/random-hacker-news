@@ -15,7 +15,7 @@ const Layout = ({ children }: Props) => (
     <header>
       <h1 className='flex justify-center p-4'>Random Hacker News</h1>
     </header>
-    <div className='flex h-screen justify-center p-4'>
+    <div className='flex justify-center p-4'>
       {children}
     </div>
     <footer>
