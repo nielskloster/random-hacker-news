@@ -1,6 +1,6 @@
 import { describe, test, expect, afterEach, vi, Mock } from 'vitest'
 import { render } from '@testing-library/react'
-import IndexPage from '.'
+import IndexPage from '../pages'
 import { useStories } from '../utils/useStories'
 
 vi.mock('../utils/useStories')
