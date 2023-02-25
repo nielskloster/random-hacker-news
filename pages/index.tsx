@@ -8,18 +8,18 @@ const IndexPage = () => {
   const status = state.status
 
   if (status === 'loading') {
-    return <Layout title="Ranked News">
+    return <Layout>
       <Loading />
     </Layout >
   }
 
   if (status === 'failed') {
-    return <Layout title="Ranked News">
+    return <Layout>
       <div className='text-red-400'>Could not load stories!</div>
     </Layout >
   }
 
-  return <Layout title="Ranked News">
+  return <Layout>
     <Stories stories={state.data} />
   </Layout>
 }

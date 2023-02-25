@@ -3,19 +3,19 @@ import Head from 'next/head'
 
 type Props = {
   children: ReactNode
-  title: string
 }
 
-const Layout = ({ children, title }: Props) => (
+const Layout = ({ children }: Props) => (
   <div>
     <Head>
-      <title>{title}</title>
+      <title>Random Hacker News</title>
       <meta charSet="utf-8" />
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
     </Head>
     <header>
+      <h1 className='flex justify-center p-4'>Random Hacker News</h1>
     </header>
-    <div className='flex h-screen justify-center items-center'>
+    <div className='flex h-screen justify-center p-4'>
       {children}
     </div>
     <footer>
