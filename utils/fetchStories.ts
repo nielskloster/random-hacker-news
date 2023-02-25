@@ -33,8 +33,8 @@ async function fetchStory(id: number): Promise<Story> {
   const authorInfo = await fetchAuthorInfo(storyInfo.by)
 
   return {
+    ...authorInfo,
     ...storyInfo,
-    ...authorInfo
   }
 }
 
