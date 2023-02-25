@@ -11,6 +11,7 @@ const Layout = ({ children }: Props) => (
       <title>Random Hacker News</title>
       <meta charSet="utf-8" />
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      <link rel="shortcut icon" href="/images/favicon.ico" />
     </Head>
     <header>
       <h1 className='flex justify-center p-4 font-mono'>Random Hacker News</h1>
