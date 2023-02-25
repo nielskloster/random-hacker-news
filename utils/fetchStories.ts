@@ -1,15 +1,5 @@
-import { Story } from "../interfaces";
+import { AuthorInfo, Story, StoryInfo } from "../interfaces";
 import { paths } from "./paths";
-
-type StoryInfo = {
-  title: string
-  by: string
-}
-
-type AuthorInfo = {
-  id: string
-  karma: number
-}
 
 async function fetchStoryIds(): Promise<number[]> {
   const response = await fetch(paths.TopStories())
@@ -43,10 +33,8 @@ async function fetchStory(id: number): Promise<Story> {
   const authorInfo = await fetchAuthorInfo(storyInfo.by)
 
   return {
-    id,
-    title: storyInfo.title,
-    author: authorInfo.id,
-    authorKarma: authorInfo.karma
+    ...storyInfo,
+    ...authorInfo
   }
 }
 

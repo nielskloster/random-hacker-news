@@ -3,9 +3,16 @@ export type RequestState<T> =
   | { status: 'success', data: T }
   | { status: 'failed', message: string }
 
-export type Story = {
+
+export type StoryInfo = {
   id: number
   title: string
-  author: string
-  authorKarma: number
+  score: number
+  by: string
 }
+
+export type AuthorInfo = {
+  karma: number
+}
+
+export type Story = StoryInfo & AuthorInfo
