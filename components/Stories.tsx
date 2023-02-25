@@ -5,9 +5,10 @@ import { paths } from "../utils/paths"
 
 type Props = {
   stories: Story[]
+  reload: VoidFunction
 }
 
-export const Stories: FC<Props> = ({ stories }) => (
+export const Stories: FC<Props> = ({ stories, reload }) => (
   <div className="grid grid-cols-1 md:grid-cols-2 gap-4 p-y-12">
     {
       stories
@@ -26,5 +27,8 @@ export const Stories: FC<Props> = ({ stories }) => (
           </button>
         ))
     }
+    <div>
+      <button className="bg-purple-500 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded" onClick={reload}>Reload</button>
+    </div>
   </div>
 )

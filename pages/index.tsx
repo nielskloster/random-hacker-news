@@ -4,7 +4,7 @@ import { Stories } from '../components/Stories'
 import { useStories } from '../utils/useStories'
 
 const IndexPage = () => {
-  const state = useStories()
+  const { state, reload } = useStories()
   const status = state.status
 
   if (status === 'loading') {
@@ -20,7 +20,7 @@ const IndexPage = () => {
   }
 
   return <Layout>
-    <Stories stories={state.data} />
+    <Stories stories={state.data} reload={reload} />
   </Layout>
 }
 
