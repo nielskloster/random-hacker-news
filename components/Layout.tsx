@@ -13,9 +13,9 @@ const Layout = ({ children }: Props) => (
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
     </Head>
     <header>
-      <h1 className='flex justify-center p-4'>Random Hacker News</h1>
+      <h1 className='flex justify-center p-4 font-mono'>Random Hacker News</h1>
     </header>
-    <div className='flex justify-center p-4'>
+    <div className='flex justify-center p-4 font-mono'>
       {children}
     </div>
     <footer>

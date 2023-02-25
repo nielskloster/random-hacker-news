@@ -11,10 +11,10 @@ export const Stories: FC<Props> = ({ stories }) => {
     {
       stories
         .map(story => (
-          <div key={story.id} className="bg-slate-100 rounded p-4 w-80">
-            <h1>{story.title}</h1>
-            <div>{story.score}</div>
-            <a href={paths.Story(story.id)} target="_blank">Show more</a>
+          <div key={story.id} className="bg-slate-100 rounded p-4 w-full">
+            <h1 className="text-purple-600">{story.title}</h1>
+            <div>Score: {story.score}</div>
+            <a className="text-sm underline" href={paths.Story(story.id)} target="_blank">Show more</a>
           </div>
         ))
     }
