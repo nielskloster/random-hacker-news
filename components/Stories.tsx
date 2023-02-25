@@ -6,8 +6,8 @@ type Props = {
   stories: Story[]
 }
 
-export const Stories: FC<Props> = ({ stories }) => {
-  return (<div className="grid grid-cols-1 md:grid-cols-2 gap-4 p-y-12">
+export const Stories: FC<Props> = ({ stories }) => (
+  <div className="grid grid-cols-1 md:grid-cols-2 gap-4 p-y-12">
     {
       stories
         .map(story => (
@@ -25,5 +25,5 @@ export const Stories: FC<Props> = ({ stories }) => {
           </button>
         ))
     }
-  </div>)
-}
+  </div>
+)

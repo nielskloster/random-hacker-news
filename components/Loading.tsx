@@ -1,5 +1,5 @@
 export const Loading = () => (
-  <div className="grid grid-cols-1 md:grid-cols-2 gap-4 p-y-12">
+  <div className="grid grid-cols-1 md:grid-cols-2 gap-4 p-y-12" aria-label="loading">
     {
       [...Array(10).keys()]
         .map(id => (
