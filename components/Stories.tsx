@@ -17,10 +17,10 @@ export const Stories: FC<Props> = ({ stories }) => (
             className="bg-slate-100 rounded-lg p-4 w-full text-left text-slate-600 flex flex-col space-y-2"
             onClick={() => window.open(paths.Story(story.id), '_blank')}
           >
-            <h1 className="text-purple-600 truncate">{story.title}</h1>
+            <h1 className="text-purple-600">{story.title}</h1>
             <div className="text-sm">
               <div>Score: {story.score}</div>
-              <div className="capitalize">Posted: {getRelativeTime(story.time * 1000)}</div>
+              <div>Posted {getRelativeTime(story.time * 1000)}</div>
               <div>By: {story.by}({story.karma})</div>
             </div>
           </button>
