@@ -1,21 +1,11 @@
-import { useEffect, useState } from 'react'
 import Layout from '../components/Layout'
 import { Loading } from '../components/Loading'
 import { Stories } from '../components/Stories'
-import { RequestState, Story } from '../interfaces'
-import { fetchStories } from '../utils/fetchStories'
-
-type StoryRequest = RequestState<Story[]>
+import { useStories } from '../utils/useStories'
 
 const IndexPage = () => {
-  const [state, setState] = useState<StoryRequest>({ status: 'loading' })
+  const state = useStories()
   const status = state.status
-
-  useEffect(() => {
-    fetchStories()
-      .then(stories => setState({ status: 'success', data: stories }))
-      .catch((error) => setState({ status: 'failed', message: error }))
-  }, [setState])
 
   if (status === 'loading') {
     return <Layout title="Ranked News">
