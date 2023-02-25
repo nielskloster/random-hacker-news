@@ -13,13 +13,15 @@ export const Stories: FC<Props> = ({ stories }) => {
         .map(story => (
           <button
             key={story.id}
-            className="bg-slate-100 rounded-lg p-4 w-full text-left text-slate-600"
+            className="bg-slate-100 rounded-lg p-4 w-full text-left text-slate-600 flex flex-col space-y-2"
             onClick={() => window.open(paths.Story(story.id), '_blank')}
           >
-            <h1 className="text-purple-600">{story.title}</h1>
-            <div>Score: {story.score}</div>
-            <div>Time: {new Date(story.time * 1000).toLocaleString()}</div>
-            <div>By: {story.by}({story.karma})</div>
+            <h1 className="text-purple-600 truncate">{story.title}</h1>
+            <div className="text-sm">
+              <div>Score: {story.score}</div>
+              <div>Time: {new Date(story.time * 1000).toLocaleString()}</div>
+              <div>By: {story.by}({story.karma})</div>
+            </div>
           </button>
         ))
     }
